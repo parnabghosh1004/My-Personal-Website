@@ -80,7 +80,7 @@ export default function About() {
                     <div className="self-start ml-6 flex flex-wrap">
                     </div>
                     <h1 className="font-bold text-xl my-4 ml-6 self-start underline flex-wrap">Resume : </h1>
-                    <a target="_blank" href={data && data[0].Resume.asset.url} className="font-medium self-start ml-6 hover:underline">Click here to view my resume</a>
+                    <a target="_blank" rel="noreferrer" href={data && data[0].Resume.asset.url} className="font-medium self-start ml-6 hover:underline">Click here to view my resume</a>
                 </div>
             </div >
         </animated.div>
