@@ -9,13 +9,90 @@ export default {
       type: 'string',
     },
     {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
+      name: 'age',
+      title: 'Age',
+      type: 'number',
+    },
+    {
+      name: 'dob',
+      title: 'DOB',
+      type: 'date',
+    },
+    {
+      name: 'nationality',
+      title: 'Nationality',
+      type: 'string',
+    },
+    {
+      name: 'education',
+      title: 'Education',
+      type: 'array',
+      of: [
+        {
+          type: "object",
+          fields: [
+            {
+              name: 'name',
+              title: 'Name of institution',
+              type: 'string'
+            },
+            {
+              name: 'timespan',
+              title: 'Time Span',
+              type: 'string'
+            },
+            {
+              name: 'educationType',
+              title: 'Education Offered',
+              type: 'string'
+            },
+            {
+              name: 'image',
+              title: 'Image',
+              type: 'url'
+            },
+          ]
+        }
+      ]
+    },
+    {
+      name: 'languages',
+      title: 'Languages',
+      type: 'array',
+      of: [
+        {
+          type: "string"
+        }
+      ],
       options: {
-        source: 'name',
-        maxLength: 96,
-      },
+        layout: 'tags',
+      }
+    },
+    {
+      name: 'skills',
+      title: 'Skills',
+      type: 'array',
+      of: [
+        {
+          type: "string"
+        }
+      ],
+      options: {
+        layout: 'tags',
+      }
+    },
+    {
+      name: 'otherinfo',
+      title: 'Other Informations',
+      type: 'array',
+      of: [
+        {
+          type: "string"
+        }
+      ],
+      options: {
+        layout: 'grid',
+      }
     },
     {
       name: 'image',
