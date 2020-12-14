@@ -32,16 +32,17 @@ export default function Projects() {
                     {projects?.map(project => (
 
                         <animated.div style={prop2} key={project._id}>
-                            <div className="py-8 flex justify-center flex-wrap lg:flex-nowrap w-auto p-8 border-opacity-5 border-2 shadow-xl rounded-lg my-6 mx-16"
+                            <div className="py-8 flex  flex-col lg:flex-row justify-center
+                            items-center flex-wrap lg:flex-nowrap w-auto p-8 border-opacity-5 border-2 shadow-xl rounded-lg my-6 mx-1 lg:mx-16"
                             >
-                                <div className="md:w-72 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                                    <span className="tracking-widest font-medium title-font text-gray-900 underline">Project Type : {project.projectType}</span>
-                                    <span className="mt-1 text-gray-500 text-sm">finished on {new Date(project.date).toDateString()}</span>
+                                <div className="md:w-72 md:mb-0 mb-6 flex flex-col md:self-start">
+                                    <span className="tracking-widest text-xs lg:font-medium title-font text-gray-900 underline">Project Type : {project.projectType}</span>
+                                    <span className="mt-1 text-gray-500 text-xs">finished on {new Date(project.date).toDateString()}</span>
                                 </div>
-                                <div className="md:flex-grow ml-10">
-                                    <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">Title : {project.title}</h2>
-                                    <p className="leading-relaxed">Description : {project.description}</p>
-                                    <a href={project.link} target="_blank" rel="noreferrer" className="text-indigo-500 inline-flex items-center mt-4">View Project
+                                <div className="md:flex-grow ml:0 lg:ml-10 md:self-start">
+                                    <h2 className="text-base md:text-xl lg:text-2xl font-medium text-gray-900 title-font mb-2">Title : {project.title}</h2>
+                                    <p className="leading-relaxed text-sm"><b>Description</b> : {project.description}</p>
+                                    <a href={project.link} target="_blank" rel="noreferrer" className="text-indigo-500 inline-flex items-center mt-4 text-xs">View Project
                             <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                             <path d="M5 12h14"></path>
                                             <path d="M12 5l7 7-7 7"></path>
