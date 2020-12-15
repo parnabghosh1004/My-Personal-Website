@@ -108,17 +108,9 @@ export default {
       type: 'file'
     },
     {
-      name: 'bio',
-      title: 'Bio',
-      type: 'array',
-      of: [
-        {
-          title: 'Block',
-          type: 'block',
-          styles: [{ title: 'Normal', value: 'normal' }],
-          lists: [],
-        },
-      ],
+      name: 'body',
+      title: 'Body',
+      type: 'text'
     },
   ],
   preview: {

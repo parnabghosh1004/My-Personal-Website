@@ -21,7 +21,7 @@ export default function NavBar() {
                             <NavLink activeClassName="p-2 text-white bg-gray-700 rounded-lg" className="mr-5 p-2 hover:text-gray-900 hover:bg-gray-300 lg:text-lg md:text-base text-sm font-medium rounded-lg" to='/posts'>My posts</NavLink>
                             <NavLink activeClassName="p-2 text-white bg-gray-700 rounded-lg" className="mr-5 p-2 hover:text-gray-900 hover:bg-gray-300 lg:text-lg md:text-base text-sm font-medium rounded-lg" to='/projects'>My Projects</NavLink>
                         </nav>
-                        <div>
+                        <div className='sm:mt-3 md:mt-0'>
                             <SocialIcon network='linkedin' url="https://www.linkedin.com/in/parnab-ghosh-57326118b" target='_blank' className="mx-2 sm:my-0 my-6" />
                             <SocialIcon network='github' url="https://github.com/parnabghosh1004" target='_blank' className="mx-2" />
                         </div>

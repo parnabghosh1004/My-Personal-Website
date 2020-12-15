@@ -7,3 +7,14 @@
 .App{
   height: 100vh;
 }
+
+.projectDiv{
+  overflow-y: scroll;
+  max-height: 30rem;
+}
+
+@media only screen and (max-width:750px){
+  .projectDiv{
+    max-height: 25rem;
+  }
+}

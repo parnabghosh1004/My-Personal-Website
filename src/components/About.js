@@ -4,10 +4,13 @@ import sanityClient from '../client'
 
 export default function About() {
 
-    const props = useSpring({ opacity: 1, from: { opacity: 0 }, config: { duration: 2000 } })
+    const props = useSpring({ opacity: 1, from: { opacity: 0 }, config: { duration: 1500 } })
     const [data, setData] = useState(null)
 
     useEffect(() => {
+
+        document.title = 'My Portfolio | about'
+
         sanityClient.fetch(`*[_type=="author"]{
             _id,
             name,
@@ -38,8 +41,8 @@ export default function About() {
     return (
 
         <animated.div style={props}>
-            <div className="flex items-center flex-col md:flex-row md:justify-evenly md:items-start">
-                <div className="flex flex-col bg-gray-200 min-w-max items-center rounded-lg my-6 py-6 w-11/12 md:w-1/4 "
+            <div className="flex items-center flex-col md:flex-row md:justify-evenly md:items-start h-full" style={{ background: 'linear-gradient(rgb(181 ,188, 237, 0.5), rgba(255, 200, 110, 0.5)), url("https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80")', backgroundSize: 'cover', height: '88vh' }} >
+                <div className="flex flex-col bg-gray-200 min-w-max items-center rounded-lg my-6 py-6 w-11/12 md:w-1/4"
                     style={{ minWidth: '25%' }}
                 >
                     <h1 className="font-bold text-xl my-6">Basic Info</h1>

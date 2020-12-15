@@ -5,6 +5,7 @@ import Home from './components/Home';
 import NavBar from './components/NavBar';
 import Posts from './components/Posts';
 import Projects from './components/Projects';
+import SinglePost from './components/SinglePost';
 
 function App() {
 
@@ -22,6 +23,9 @@ function App() {
       </Route>
       <Route path='/posts'>
         <Posts />
+      </Route>
+      <Route path='/post/:id'>
+        <SinglePost />
       </Route>
     </div>
   );
