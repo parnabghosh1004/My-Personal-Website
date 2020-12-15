@@ -26,7 +26,7 @@ export default function Projects() {
     }, [])
 
     return (
-        <section style={{ background: 'linear-gradient(rgb(181 ,188, 237, 0.5), rgba(255, 200, 110, 0.5)), url("https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80")', backgroundSize: 'cover', height: '100vh' }} className="text-gray-700 body-font overflow-hidden">
+        <section style={{ background: 'linear-gradient(rgb(181 ,188, 237, 0.5), rgba(255, 200, 110, 0.5)), url("https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80")', backgroundSize: 'cover', height: '90vh' }} className="text-gray-700 body-font overflow-hidden">
             <animated.div style={prop1}>
                 <h1 className="font-semibold lg:text-4xl md:text-3xl text-gray-900 text-center my-12">My Projects</h1>
             </animated.div>
